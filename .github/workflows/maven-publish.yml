@@ -27,12 +27,3 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: FireFlink suite execution
       run: java -jar fireflink-action-1.0.0.jar https://app.fireflink.com SUITE1034 41C1972B769B81640C58A27D8367F8A0F7017BD298C58745F53FB30866514F388E886DF4678BBB51 sachin.hb@testyantra.com Web
-
-
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
-
-    - name: Publish to GitHub Packages Apache Maven
-      run: mvn deploy -s $GITHUB_WORKSPACE/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ github.token }}
