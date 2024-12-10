@@ -26,7 +26,7 @@ jobs:
         server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
         settings-path: ${{ github.workspace }} # location for the settings.xml file
     - name: FireFlink suite execution
-      run: java -jar fireflink-action-1.0.0.jar https://app.fireflink.com SUITE1130 2FBBE0AB63BA19BC459AF8397CC9D4844A6B3FAE3B4EB5D602D94FF29283FBF3D2D403048642EA6D sachin.hb@testyantra.com Web "&" Mobile
+      run: java -jar fireflink-action-1.0.0.jar https://app.fireflink.com SUITE1033 2FBBE0AB63BA19BC459AF8397CC9D4844A6B3FAE3B4EB5D602D94FF29283FBF3D2D403048642EA6D sachin.hb@testyantra.com Web
 
 
     - name: Build with Maven
